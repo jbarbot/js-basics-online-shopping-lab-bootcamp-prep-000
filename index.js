@@ -64,16 +64,18 @@ function removeFromCart(item) {
     for (i = 0; i < getCart().length; i++) {
       if (getCart()[i].itemName === item) {itemToRemove = getCart()[i].itemName
       } return itemToRemove;
+  }
       function removeFromCart(itemToRemove) {
         var itemIndex = cart.indexOf(itemToRemove)
         getCart().splice(itemIndex,1)
       }
-    }
+    
   }
   function itemNotFound() {
   return 'That item is not in your cart.'
   }
  itemToRemove = searchCartForItemToRemove(item) 
+ return itemToRemove ? removeFromCart(item) : itemNotFound()
 }
 
 function placeOrder(cardNumber) {
