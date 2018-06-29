@@ -77,6 +77,7 @@ function removeFromCart(item) {
  itemToRemove = searchCartForItemToRemove(item) 
  return itemToRemove ? removeFromCart(item) : itemNotFound()
 }
+//=================================================================================================
 
 function placeOrder(cardNumber) {
   // write your code here
