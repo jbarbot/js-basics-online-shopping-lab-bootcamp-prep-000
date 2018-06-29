@@ -73,7 +73,7 @@ function removeFromCart(item) {
   function itemNotFound() {
   return 'That item is not in your cart.'
   }
-  itemToRemove
+  
 }
 
 function placeOrder(cardNumber) {
