@@ -60,11 +60,11 @@ function total() {
 
 function removeFromCart(item) {
   function searchForItem(item) {
-    var itemToRemove
     for (var i = 0; i < getCart().length; i++) {
       if (getCart()[i].itemName === item) {itemToRemove = getCart()[i]
       } return itemToRemove;
-  }
+  } var itemToRemove = searchForItem(item);
+  
       function removeFromCart(itemToRemove) {
         var itemIndex = cart.indexOf(itemToRemove)
         getCart().splice(itemIndex,1)
