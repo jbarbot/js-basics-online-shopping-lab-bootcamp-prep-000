@@ -44,7 +44,7 @@ function getCartList() {
   function findCartCost() {
    var cartCost = 0
   for (var i = 0; i <getCart().length; i++) {
-    cartCost =`${getCart()[i].itemPrice}` + cartCost
+    cartCost = getCart()[i].itemPrice + cartCost
   }
 return cartCost
   }
