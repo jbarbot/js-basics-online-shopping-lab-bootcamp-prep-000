@@ -65,7 +65,8 @@ function removeFromCart(item) {
       if (getCart()[i].itemName === item) {itemToRemove = getCart()[i].itemName
       } return itemToRemove;
       function removeFromCart(itemToRemove) {
-        var itemIndex = cart.indexOf
+        var itemIndex = cart.indexOf(itemToRemove)
+        
       }
     }
   }
