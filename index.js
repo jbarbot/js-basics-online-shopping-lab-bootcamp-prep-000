@@ -75,7 +75,7 @@ function removeFromCart(item) {
   function itemNotFound() {
   return 'That item is not in your cart.'
   }
- itemToRemove = searchForItem(item) 
+ 
  return itemToRemove ? removeFromCart(item) : itemNotFound()
 }
 //=================================================================================================
