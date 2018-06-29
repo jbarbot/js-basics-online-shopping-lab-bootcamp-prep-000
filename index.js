@@ -62,7 +62,7 @@ function removeFromCart(item) {
   function searchForItem(item) {
     var itemToRemove
     for (i = 0; i < getCart().length; i++) {
-      if (getCart()[i].itemName === item) {itemToRemove = getCart()[i].itemName
+      if (getCart()[i].itemName === item) {itemToRemove = getCart()[i]
       } return itemToRemove;
   }
       function removeFromCart(itemToRemove) {
