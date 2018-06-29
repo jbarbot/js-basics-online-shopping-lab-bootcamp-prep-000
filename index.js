@@ -66,7 +66,7 @@ function removeFromCart(item) {
       } return itemToRemove;
       function removeFromCart(itemToRemove) {
         var itemIndex = cart.indexOf(itemToRemove)
-        
+        getCart().splice(itemIndex,1)
       }
     }
   }
